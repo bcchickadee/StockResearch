@@ -36,8 +36,8 @@ while True:
         except ValueError:
             print('\n오류: 올바른 숫자를 입력해 주십시오.')
         else:
-            if MinimumFlux<0:
-                print('\n오류: 최대 주식 감소폭은 0 이상이어야 합니다.')
+            if MinimumFlux<0 or MinimumFlux>100:
+                print('\n오류: 최대 주식 감소폭은 0 이상 100 이하여야 합니다.')
             else:
                 break
     while True:

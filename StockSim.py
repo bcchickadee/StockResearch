@@ -42,12 +42,14 @@ while True:
                 break
     while True:
         try:
-            Period=int(input('관측 일수를 입력해 주십시오.\n관측 일수: '))
+            Period=int(input('\n관측 일수를 입력해 주십시오.\n관측 일수: '))
         except ValueError:
             print('\n오류: 올바른 자연수를 입력하여 주십시오.')
         else:
             if Period<=0:
                 print('\n오류: 관측 일수는 자연수여야 합니다.')
+            else:
+                break
     
     for Day in range(int(Period)+1):
         if Day==0:

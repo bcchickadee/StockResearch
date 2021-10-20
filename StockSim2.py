@@ -4,7 +4,7 @@ import statistics
 import numbers
 
 print('Random Walk와 Monte Carlo 방식을 통한 주식 가격 재현 프로그램')
-print('Made by bcchickadee, Jun 21 2020')
+print('Made by bcchickadee, Jun 21 2020. Updated Oct 20 2021')
 print('=======================================\n')
 
 while True:

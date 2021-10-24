@@ -73,7 +73,7 @@ def VarCreater(var_type, default_value, description):
           return var
           break
   elif var_type=='str':
-    var=input('\n'+description)
+    var=input('\n'+description+'.\nValue: ')
     return var
   else:
     raise TypeError('Data type not available. Check for errors in var_type argument\n')

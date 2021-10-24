@@ -1,11 +1,11 @@
 # Variable Creater Function
-# Usage: var=VarCreater(var_name, var_type, default_value, description)
-# var_name, var_type, description must be type 'str'
+# Usage: var=VarCreater(var_type, default_value, description)
+# var_type, description must be type 'str'
 # 5 types of var_type: 'int+' (integer larger than 0), 'int+-' (integer), 'float+' (floating point number larger than 0),
 # 'float+-' (floating point number), 'str' (string)
 # description will appear upon input
 
-def VarCreater(var_name, var_type, default_value, description):
+def VarCreater(var_type, default_value, description):
   if var_type=='int+':
     while True:
       var=input(description+' The default value is '+str(default_value)+'.\nValue: ')

@@ -169,7 +169,7 @@ print('\nAverage stock price during '+str(Period)+' days: '+str(statistics.mean(
 print('Stock price after '+str(Period)+' days: '+str(PriceList[-1]))
 print('Difference between initial stock price and stock price after '+str(Period)+' days: '+str(PriceList[-1]-InitPrice))
 print('Stock price change after '+str(Period)+' days: '+str(PriceList[-1]/InitPrice*100-100)+'%')
-plt.plot(PriceList, color='red')
+plt.plot(PriceList, color='red') # Will add feature: when transaction is made, the color or shape will be displayed differently
 plt.xlim(0, Period)
 plt.title('Stock Price Simulation for '+str(Period)+' days')
 plt.show()

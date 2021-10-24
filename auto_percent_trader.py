@@ -160,7 +160,8 @@ Cash=Cash+Shares*Price
 Shares=0
 
 # Print Data
-print(TransactionList)
+for Element in TransactionList:
+  print(Element)
 print(Cash)
 print('Yield of Transaction: '+str(Cash/(InitShares*InitPrice)*100-100)+'%')
 

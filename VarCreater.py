@@ -1,3 +1,10 @@
+# Variable Creater Function
+# Usage: var=VarCreater(var_name, var_type, default_value, description)
+# var_name, var_type, description must be type 'str'
+# 5 types of var_type: 'int+' (integer larger than 0), 'int+-' (integer), 'float+' (floating point number larger than 0),
+# 'float+-' (floating point number), 'str' (string)
+# description will appear upon input
+
 def VarCreater(var_name, var_type, default_value, description):
   if var_type=='int+':
     while True:
@@ -70,9 +77,3 @@ def VarCreater(var_name, var_type, default_value, description):
     return var
   else:
     raise TypeError('Data type not available. Check for errors in var_type argument\n')
-
-# Usage: var=VarCreater(var_name, var_type, default_value, description)
-# var_name, var_type, description must be type 'str'
-# 5 types of var_type: 'int+' (integer larger than 0), 'int+-' (integer), 'float+' (floating point number larger than 0),
-# 'float+-' (floating point number), 'str' (string)
-# description will appear upon input

@@ -8,7 +8,7 @@
 def VarCreater(var_type, default_value, description):
   if var_type=='int+':
     while True:
-      var=input(description+' The default value is '+str(default_value)+'.\nValue: ')
+      var=input('\n'+description+' The default value is '+str(default_value)+'.\nValue: ')
       if var=='':
         var=default_value
         return var
@@ -26,7 +26,7 @@ def VarCreater(var_type, default_value, description):
             break
   elif var_type=='int+-':
     while True:
-      var=input(description+' The default value is '+str(default_value)+'.\nValue: ')
+      var=input('\n'+description+' The default value is '+str(default_value)+'.\nValue: ')
       if var=='':
         var=default_value
         return var
@@ -41,7 +41,7 @@ def VarCreater(var_type, default_value, description):
           break
   elif var_type=='float+':
     while True:
-      var=input(description+' The default value is '+str(default_value)+'.\nValue: ')
+      var=input('\n'+description+' The default value is '+str(default_value)+'.\nValue: ')
       if var=='':
         var=default_value
         return var
@@ -59,7 +59,7 @@ def VarCreater(var_type, default_value, description):
             break
   elif var_type=='float+-':
     while True:
-      var=input(description+' The default value is '+str(default_value)+'.\nValue: ')
+      var=input('\n'+description+' The default value is '+str(default_value)+'.\nValue: ')
       if var=='':
         var=default_value
         return var
@@ -73,7 +73,7 @@ def VarCreater(var_type, default_value, description):
           return var
           break
   elif var_type=='str':
-    var=input(description)
+    var=input('\n'+description)
     return var
   else:
     raise TypeError('Data type not available. Check for errors in var_type argument\n')
